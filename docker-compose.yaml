@@ -7,5 +7,5 @@ services:
       - 3001:3001
     environment:
       - PORT=${PORT:-3001}
-      - REACT_APP_STRIPE_KEY=pk-docker-compose-supersecret
-      - REACT_APP_SEGMENT_KEY=segment-docker-compose-secret
+      - STRIPE_KEY=pk-docker-compose-supersecret
+      - SEGMENT_KEY=segment-docker-compose-secret
