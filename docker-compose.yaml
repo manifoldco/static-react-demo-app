@@ -7,5 +7,5 @@ services:
       - 3001:3001
     environment:
       - PORT=${PORT:-3001}
-      - STRIPE_KEY=pk-docker-compose-supersecret
-      - SEGMENT_KEY=segment-docker-compose-secret
+      - STRIPE_KEY=${STRIPE_KEY:-pk-docker-compose-supersecret}
+      - SEGMENT_KEY=${SEGMENT_KEY:-segment-docker-compose-secret}
